@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>Servlet Application</display-name>
+	<servlet>
+		<servlet-name>actuatorservlet</servlet-name>
+		<servlet-class>actuator.ActuatorAPI</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>actuatorservlet</servlet-name>
+		<url-pattern>/actuator</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>temphumservlet</servlet-name>
+		<servlet-class>sensors.TempHumSensorAPI</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>temphumservlet</servlet-name>
+		<url-pattern>/temphumsensor</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>pressureservlet</servlet-name>
+		<servlet-class>sensors.PressureSensorAPI</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>pressureservlet</servlet-name>
+		<url-pattern>/pressuresensor</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
